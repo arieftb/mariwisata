@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mariwisata</string>
+    <string name="username_text">Username</string>
+    <string name="password_text">Password</string>
+    <string name="login_text">Login</string>
+    <string name="logout_text">Logout</string>
+</resources>

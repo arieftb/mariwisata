@@ -38,7 +38,7 @@ public class LoginActivity extends AppCompatActivity {
                 pword = etPassword.getText().toString();
 
                 if (uname.equals(USERNAME) && pword.equals(PASSWORD)) {
-//                    mSessionManager.createLoginSession(uname,pword);
+                    mSessionManager.createLoginSession(uname,pword);
                     Toast.makeText(LoginActivity.this, "Login Berhasil", Toast.LENGTH_SHORT).show();
 
                     Intent mIntent = new Intent(LoginActivity.this, SplashActivity.class);

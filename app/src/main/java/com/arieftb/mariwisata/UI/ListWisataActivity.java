@@ -8,8 +8,11 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.arieftb.mariwisata.R;
+import com.arieftb.mariwisata.session.SessionManager;
 
 public class ListWisataActivity extends AppCompatActivity {
+
+    SessionManager mSessionManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +33,7 @@ public class ListWisataActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
 
         if (item.getItemId()==R.id.opt_logout){
-
+            mSessionManager.logoutUser();
             Toast.makeText(ListWisataActivity.this, "Logout", Toast.LENGTH_SHORT).show();
 //            showDialog();
 //            Toast.makeText(getActivity(),"Keluar", Toast.LENGTH_SHORT).show();

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail_wisata"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arieftb.mariwisata.UI.DetailWisataActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_gambarWisata"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/candiprambanan"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/tv_namaWisata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingBottom="2dp"
+                android:paddingTop="5dp"
+                android:text="Candi Prambanan"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tv_alamatWisata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingBottom="5dp"
+                android:text="Jl Kalasan Klaten"
+                android:textColor="@color/colorGray"
+                android:textSize="12sp"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/tv_detailWisata"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:text="blablaijfpeqjpjfepjfpofjafaopejfa"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
